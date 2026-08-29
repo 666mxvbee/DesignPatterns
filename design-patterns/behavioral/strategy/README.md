@@ -53,3 +53,12 @@ Strategy заменяет **весь алгоритм целиком** чере�
 - `IComparer<T>` и делегат `Comparison<T>`, используемые в `List<T>.Sort()`, `Array.Sort()`.
 - `IEqualityComparer<T>` в словарях и `HashSet<T>`.
 - Middleware-компоненты авторизации (`IAuthorizationHandler`) в ASP.NET Core - разные стратегии проверки прав доступа.
+
+## Пример реализации на C\#
+
+```csharp title="Strategy.cs" linenums="1"
+--8<-- "behavioral/strategy/Strategy.cs"
+```
+
+[Открыть `Strategy.cs` отдельно](Strategy-code.md){ .md-button }
+[Скачать `Strategy.cs`](Strategy.cs){ .md-button .md-button--primary download }

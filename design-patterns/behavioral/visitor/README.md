@@ -47,3 +47,12 @@
 
 - `ExpressionVisitor` в `System.Linq.Expressions` - классический учебный пример прямо из BCL: позволяет обходить и трансформировать деревья выражений LINQ, добавляя новые операции (например, перевод в SQL) без изменения классов `Expression`.
 - Разбор синтаксических деревьев в Roslyn (`SyntaxVisitor`, `CSharpSyntaxVisitor`) - применяется для анализа и рефакторинга кода C#.
+
+## Пример реализации на C\#
+
+```csharp title="Visitor.cs" linenums="1"
+--8<-- "behavioral/visitor/Visitor.cs"
+```
+
+[Открыть `Visitor.cs` отдельно](Visitor-code.md){ .md-button }
+[Скачать `Visitor.cs`](Visitor.cs){ .md-button .md-button--primary download }

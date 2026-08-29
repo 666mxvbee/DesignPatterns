@@ -60,3 +60,12 @@
 - `System.Runtime.Remoting.Proxies.RealProxy` (legacy .NET Remoting) - явная реализация Remote Proxy.
 - `DispatchProxy` в `System.Reflection` - базовый класс для построения собственных динамических прокси (часто используется в AOP-библиотеках и мокинг-фреймворках).
 - `Lazy<T>` можно рассматривать как частный случай идеи Virtual Proxy применительно к одному значению.
+
+## Пример реализации на C\#
+
+```csharp title="Proxy.cs" linenums="1"
+--8<-- "structural/proxy/Proxy.cs"
+```
+
+[Открыть `Proxy.cs` отдельно](Proxy-code.md){ .md-button }
+[Скачать `Proxy.cs`](Proxy.cs){ .md-button .md-button--primary download }

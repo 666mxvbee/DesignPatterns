@@ -51,3 +51,12 @@ Command хранит действие и может реализовать undo 
 - Сериализация объекта может быть техническим способом получить снимок, но сама по себе сериализация не является паттерном Memento и часто слишком тяжела для частого undo.
 
 Источник для сверки структуры и вариантов: [Refactoring.Guru - Memento](https://refactoring.guru/ru/design-patterns/memento).
+
+## Пример реализации на C\#
+
+```csharp title="Memento.cs" linenums="1"
+--8<-- "behavioral/memento/Memento.cs"
+```
+
+[Открыть `Memento.cs` отдельно](Memento-code.md){ .md-button }
+[Скачать `Memento.cs`](Memento.cs){ .md-button .md-button--primary download }

@@ -79,3 +79,23 @@ Abstract Factory создаёт объект **за один вызов** одн
 
 - Тепляков С. «Паттерны проектирования на платформе .NET», глава 11: fluent interface, методы расширения, строго типизированный строитель и immutable-объекты.
 - [Refactoring.Guru - Builder](https://refactoring.guru/ru/design-patterns/builder): классическая структура с несколькими строителями и опциональным Director.
+
+## Пример реализации на C\#
+
+=== "Builder.cs"
+
+    ```csharp title="Builder.cs" linenums="1"
+    --8<-- "creational/builder/Builder.cs"
+    ```
+
+=== "BuilderVariants.cs"
+
+    ```csharp title="BuilderVariants.cs" linenums="1"
+    --8<-- "creational/builder/BuilderVariants.cs"
+    ```
+
+[Открыть `Builder.cs` отдельно](Builder-code.md){ .md-button }
+[Скачать `Builder.cs`](Builder.cs){ .md-button .md-button--primary download }
+
+[Открыть `BuilderVariants.cs` отдельно](BuilderVariants-code.md){ .md-button }
+[Скачать `BuilderVariants.cs`](BuilderVariants.cs){ .md-button .md-button--primary download }

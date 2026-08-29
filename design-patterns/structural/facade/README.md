@@ -47,3 +47,12 @@ Adapter подгоняет интерфейс **существующего об�
 - `HttpClient` - фасад над низкоуровневой работой с сокетами, DNS, TLS-рукопожатием и т.д.
 - `File`/`Directory` в `System.IO` - фасад над более низкоуровневыми `FileStream`, `FileSystemInfo` и системными вызовами.
 - Классы вида `*Service`/`*Manager` в бизнес-логике приложений, скрывающие за собой работу с несколькими репозиториями и внешними клиентами.
+
+## Пример реализации на C\#
+
+```csharp title="Facade.cs" linenums="1"
+--8<-- "structural/facade/Facade.cs"
+```
+
+[Открыть `Facade.cs` отдельно](Facade-code.md){ .md-button }
+[Скачать `Facade.cs`](Facade.cs){ .md-button .md-button--primary download }

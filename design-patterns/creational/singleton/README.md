@@ -44,3 +44,12 @@ Singleton:
 - `HttpClient` в паттерне `IHttpClientFactory` фактически переиспользуется как синглтон-подобный `HttpMessageHandler`.
 - `System.Windows.Application.Current` в WPF.
 - `MemoryCache.Default` (в старом `System.Runtime.Caching`).
+
+## Пример реализации на C\#
+
+```csharp title="Singleton.cs" linenums="1"
+--8<-- "creational/singleton/Singleton.cs"
+```
+
+[Открыть `Singleton.cs` отдельно](Singleton-code.md){ .md-button }
+[Скачать `Singleton.cs`](Singleton.cs){ .md-button .md-button--primary download }

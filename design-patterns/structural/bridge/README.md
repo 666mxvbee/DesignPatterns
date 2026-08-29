@@ -46,3 +46,12 @@ Adapter обычно подключают после появления несо
 - Абстракции ADO.NET (`DbConnection`, `DbCommand`) и конкретные провайдеры баз данных близки к идее Bridge: высокоуровневый клиентский код работает с общим API, а провайдер выполняет платформенную работу.
 
 Источник для сверки структуры: [Refactoring.Guru - Bridge](https://refactoring.guru/ru/design-patterns/bridge).
+
+## Пример реализации на C\#
+
+```csharp title="Bridge.cs" linenums="1"
+--8<-- "structural/bridge/Bridge.cs"
+```
+
+[Открыть `Bridge.cs` отдельно](Bridge-code.md){ .md-button }
+[Скачать `Bridge.cs`](Bridge.cs){ .md-button .md-button--primary download }

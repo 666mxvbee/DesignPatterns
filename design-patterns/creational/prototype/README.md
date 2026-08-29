@@ -55,3 +55,12 @@ Builder создаёт объект по шагам из переданных п
 - `MemberwiseClone()` доступен наследникам `object`, но требует явной обработки вложенного изменяемого состояния.
 
 Источник для сверки структуры: [Refactoring.Guru - Prototype](https://refactoring.guru/ru/design-patterns/prototype).
+
+## Пример реализации на C\#
+
+```csharp title="Prototype.cs" linenums="1"
+--8<-- "creational/prototype/Prototype.cs"
+```
+
+[Открыть `Prototype.cs` отдельно](Prototype-code.md){ .md-button }
+[Скачать `Prototype.cs`](Prototype.cs){ .md-button .md-button--primary download }

@@ -51,3 +51,12 @@
 - `INotifyPropertyChanged`/`INotifyCollectionChanged` - основа биндинга данных в WPF, MAUI, Blazor.
 - `IObservable<T>`/`IObserver<T>` из `System` и библиотека Reactive Extensions (Rx.NET).
 - `FileSystemWatcher` - уведомляет подписчиков об изменениях в файловой системе через события.
+
+## Пример реализации на C\#
+
+```csharp title="Observer.cs" linenums="1"
+--8<-- "behavioral/observer/Observer.cs"
+```
+
+[Открыть `Observer.cs` отдельно](Observer-code.md){ .md-button }
+[Скачать `Observer.cs`](Observer.cs){ .md-button .md-button--primary download }

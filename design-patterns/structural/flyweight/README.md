@@ -52,3 +52,12 @@
 - Пулы и кеши метаданных могут использовать ту же идею разделения тяжёлого неизменяемого состояния, но не каждый пул является Flyweight.
 
 Источник для сверки структуры: [Refactoring.Guru - Flyweight](https://refactoring.guru/ru/design-patterns/flyweight).
+
+## Пример реализации на C\#
+
+```csharp title="Flyweight.cs" linenums="1"
+--8<-- "structural/flyweight/Flyweight.cs"
+```
+
+[Открыть `Flyweight.cs` отдельно](Flyweight-code.md){ .md-button }
+[Скачать `Flyweight.cs`](Flyweight.cs){ .md-button .md-button--primary download }

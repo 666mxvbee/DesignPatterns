@@ -49,3 +49,12 @@ Factory Method - это **один метод**, переопределяемы�
 - `Stream.CreateWaitHandle()` (устаревший, но исторически показательный пример).
 - Многие `*Provider`/`*Factory` классы в ADO.NET: `DbProviderFactory.CreateConnection()`, `CreateCommand()` - конкретная фабрика (`SqlClientFactory`, `NpgsqlFactory`) решает, объекты каких конкретных классов вернуть.
 - `HttpMessageHandlerFactory` внутри `IHttpClientFactory`.
+
+## Пример реализации на C\#
+
+```csharp title="FactoryMethod.cs" linenums="1"
+--8<-- "creational/factory-method/FactoryMethod.cs"
+```
+
+[Открыть `FactoryMethod.cs` отдельно](FactoryMethod-code.md){ .md-button }
+[Скачать `FactoryMethod.cs`](FactoryMethod.cs){ .md-button .md-button--primary download }

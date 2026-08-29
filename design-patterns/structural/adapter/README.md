@@ -52,3 +52,12 @@ Adapter **меняет интерфейс** существующего объе�
 - Адаптеры LINQ to Objects/LINQ to SQL, приводящие разные источники данных к единому `IQueryable`/`IEnumerable`.
 - `DataAdapter` в ADO.NET (`SqlDataAdapter` и т.д.) - явно называется адаптером, связывает `DataSet` с конкретной СУБД.
 - Обёртки над `Stream` при чтении данных из разных источников (файл, сеть, память) под единый интерфейс `Stream`.
+
+## Пример реализации на C\#
+
+```csharp title="Adapter.cs" linenums="1"
+--8<-- "structural/adapter/Adapter.cs"
+```
+
+[Открыть `Adapter.cs` отдельно](Adapter-code.md){ .md-button }
+[Скачать `Adapter.cs`](Adapter.cs){ .md-button .md-button--primary download }

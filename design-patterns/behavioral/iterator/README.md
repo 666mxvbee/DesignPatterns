@@ -50,3 +50,12 @@
 - `IEnumerable<T>`/`IEnumerator<T>` и оператор `foreach` - реализация паттерна Iterator прямо в основе языка.
 - Весь LINQ to Objects (`Where`, `Select`, `OrderBy`, ...) - цепочки итераторов, ленивая последовательность операций над `IEnumerable<T>`.
 - `IAsyncEnumerable<T>` и `await foreach` - асинхронный вариант того же паттерна для потоковых/асинхронных источников данных.
+
+## Пример реализации на C\#
+
+```csharp title="Iterator.cs" linenums="1"
+--8<-- "behavioral/iterator/Iterator.cs"
+```
+
+[Открыть `Iterator.cs` отдельно](Iterator-code.md){ .md-button }
+[Скачать `Iterator.cs`](Iterator.cs){ .md-button .md-button--primary download }

@@ -46,3 +46,12 @@
 - ASP.NET Core middleware pipeline - каждый middleware решает, обработать ли запрос самому (вернуть ответ) или передать его дальше по конвейеру через `next()`.
 - Обработка исключений через вложенные `try/catch` разных уровней приложения - концептуально похожая идея передачи "необработанного" случая на следующий уровень.
 - Валидация в виде цепочки правил, где каждое правило проверяет свой аспект и передаёт объект дальше, если само не нашло нарушений.
+
+## Пример реализации на C\#
+
+```csharp title="ChainOfResponsibility.cs" linenums="1"
+--8<-- "behavioral/chain-of-responsibility/ChainOfResponsibility.cs"
+```
+
+[Открыть `ChainOfResponsibility.cs` отдельно](ChainOfResponsibility-code.md){ .md-button }
+[Скачать `ChainOfResponsibility.cs`](ChainOfResponsibility.cs){ .md-button .md-button--primary download }

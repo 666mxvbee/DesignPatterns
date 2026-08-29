@@ -42,3 +42,12 @@
 - `System.Windows.Controls` (WPF) и `System.Windows.Forms.Control` - элементы управления образуют дерево, где контейнер (`Panel`, `GroupBox`) хранит другие контролы, а операции вроде `Render`/`Layout` рекурсивно применяются ко всему поддереву.
 - `System.Linq.Expressions.Expression` - дерево выражений, где узлы (`BinaryExpression`, `MethodCallExpression`, ...) могут содержать другие узлы того же базового типа `Expression`.
 - `XElement`/`XmlNode` - DOM-подобные деревья, где узел документа может содержать другие узлы.
+
+## Пример реализации на C\#
+
+```csharp title="Composite.cs" linenums="1"
+--8<-- "structural/composite/Composite.cs"
+```
+
+[Открыть `Composite.cs` отдельно](Composite-code.md){ .md-button }
+[Скачать `Composite.cs`](Composite.cs){ .md-button .md-button--primary download }

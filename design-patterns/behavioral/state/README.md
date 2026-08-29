@@ -62,3 +62,12 @@ public void Ship()
 - `System.Net.Sockets.Socket`/`TcpClient` - внутреннее поведение существенно зависит от состояния соединения (не подключен/подключается/подключен/закрывается).
 - `Task` и его состояния (`Created`, `Running`, `RanToCompletion`, `Faulted`, `Canceled`) - поведение операций над задачей (`Wait`, `GetAwaiter`) зависит от того, в каком она состоянии.
 - Конечные автоматы бизнес-процессов (workflow-движки, обработка заявок, платёжные статусы) - типичная предметная область для State.
+
+## Пример реализации на C\#
+
+```csharp title="State.cs" linenums="1"
+--8<-- "behavioral/state/State.cs"
+```
+
+[Открыть `State.cs` отдельно](State-code.md){ .md-button }
+[Скачать `State.cs`](State.cs){ .md-button .md-button--primary download }

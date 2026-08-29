@@ -57,3 +57,12 @@
 - `Stream.CopyTo` - общий алгоритм копирования, использующий переопределяемые `Read`/`Write` у конкретных наследников `Stream`.
 - Жизненный цикл ASP.NET Web Forms (`Page_Init`, `Page_Load`, `Page_PreRender`, ...) - классический (хоть и устаревший) пример шаблонного метода на уровне целого фреймворка.
 - Базовые классы `IEnumerator`/абстрактные коллекции, где общий алгоритм обхода фиксирован, а конкретное получение элемента переопределяется.
+
+## Пример реализации на C\#
+
+```csharp title="TemplateMethod.cs" linenums="1"
+--8<-- "behavioral/template-method/TemplateMethod.cs"
+```
+
+[Открыть `TemplateMethod.cs` отдельно](TemplateMethod-code.md){ .md-button }
+[Скачать `TemplateMethod.cs`](TemplateMethod.cs){ .md-button .md-button--primary download }

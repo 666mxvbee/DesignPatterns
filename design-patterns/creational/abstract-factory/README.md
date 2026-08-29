@@ -47,3 +47,12 @@ Abstract Factory обычно **реализуется через несколь
 
 - `System.Data.Common.DbProviderFactory` - абстрактная фабрика для ADO.NET: конкретные реализации (`SqlClientFactory`, `NpgsqlFactory`) создают согласованное семейство `DbConnection`, `DbCommand`, `DbDataAdapter` для конкретной СУБД.
 - Фабрики контролов в кросс-платформенных UI-фреймворках, где один "движок рендеринга" должен создавать визуально согласованный набор элементов управления.
+
+## Пример реализации на C\#
+
+```csharp title="AbstractFactory.cs" linenums="1"
+--8<-- "creational/abstract-factory/AbstractFactory.cs"
+```
+
+[Открыть `AbstractFactory.cs` отдельно](AbstractFactory-code.md){ .md-button }
+[Скачать `AbstractFactory.cs`](AbstractFactory.cs){ .md-button .md-button--primary download }

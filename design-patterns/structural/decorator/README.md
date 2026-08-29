@@ -50,3 +50,12 @@
 
 - Иерархия `Stream`: `GZipStream`, `CryptoStream`, `BufferedStream` оборачивают базовый `Stream` (например, `FileStream`), добавляя сжатие, шифрование или буферизацию - классический учебный пример Decorator прямо из BCL.
 - Middleware в ASP.NET Core частично сочетает в себе идеи Decorator и Chain of Responsibility - каждый middleware оборачивает следующий в цепочке и может добавить поведение до/после вызова `next()`.
+
+## Пример реализации на C\#
+
+```csharp title="Decorator.cs" linenums="1"
+--8<-- "structural/decorator/Decorator.cs"
+```
+
+[Открыть `Decorator.cs` отдельно](Decorator-code.md){ .md-button }
+[Скачать `Decorator.cs`](Decorator.cs){ .md-button .md-button--primary download }
