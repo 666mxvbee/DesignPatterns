@@ -6,7 +6,7 @@
 
 Читайте книгу на сайте: [666mxvbee.github.io/DesignPatterns](https://666mxvbee.github.io/DesignPatterns/)
 
-[https://github.com/SergeyTeplyakov/DesignPatternsBook](Источник, откуда был сделан конспект)
+[Источник, откуда был сделан конспект](https://github.com/SergeyTeplyakov/DesignPatternsBook)
 
 ## Оглавление
 
