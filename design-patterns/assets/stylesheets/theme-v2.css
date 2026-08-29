@@ -64,6 +64,13 @@
   border-radius: 0.3rem;
 }
 
+.md-typeset .md-button code {
+  background: transparent;
+  border-radius: 0;
+  color: inherit;
+  padding: 0;
+}
+
 .md-typeset pre > code {
   line-height: 1.55;
 }
