@@ -1,0 +1,125 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+
+site_name: Паттерны проектирования на C# / .NET
+site_description: Практический конспект 22 классических паттернов проектирования с примерами на C#
+site_author: Учебный проект по паттернам проектирования
+site_url: https://666mxvbee.github.io/DesignPatterns/
+repo_url: https://github.com/666mxvbee/DesignPatterns
+repo_name: 666mxvbee/DesignPatterns
+edit_uri: edit/main/design-patterns/
+
+docs_dir: design-patterns
+site_dir: site
+use_directory_urls: true
+
+exclude_docs: |
+  .git/
+  .venv/
+
+theme:
+  name: material
+  language: ru
+  icon:
+    logo: material/book-open-page-variant
+    repo: fontawesome/brands/github
+  font: false
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Включить тёмную тему
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: purple
+      toggle:
+        icon: material/weather-sunny
+        name: Включить светлую тему
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.code.select
+
+plugins:
+  - search:
+      lang:
+        - ru
+        - en
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      permalink_title: Ссылка на этот раздел
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      base_path:
+        - design-patterns
+      encoding: utf-8
+      check_paths: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+copyright: Конспект по паттернам проектирования для .NET
+
+extra:
+  generator: true
+
+nav:
+  - Главная: README.md
+  - Порождающие:
+      - Обзор категории: creational/README.md
+      - Фабричный метод: creational/factory-method/README.md
+      - Абстрактная фабрика: creational/abstract-factory/README.md
+      - Строитель: creational/builder/README.md
+      - Прототип: creational/prototype/README.md
+      - Одиночка: creational/singleton/README.md
+  - Структурные:
+      - Обзор категории: structural/README.md
+      - Адаптер: structural/adapter/README.md
+      - Мост: structural/bridge/README.md
+      - Компоновщик: structural/composite/README.md
+      - Декоратор: structural/decorator/README.md
+      - Фасад: structural/facade/README.md
+      - Легковес: structural/flyweight/README.md
+      - Заместитель: structural/proxy/README.md
+  - Поведенческие:
+      - Обзор категории: behavioral/README.md
+      - Цепочка обязанностей: behavioral/chain-of-responsibility/README.md
+      - Команда: behavioral/command/README.md
+      - Итератор: behavioral/iterator/README.md
+      - Посредник: behavioral/mediator/README.md
+      - Снимок: behavioral/memento/README.md
+      - Наблюдатель: behavioral/observer/README.md
+      - Состояние: behavioral/state/README.md
+      - Стратегия: behavioral/strategy/README.md
+      - Шаблонный метод: behavioral/template-method/README.md
+      - Посетитель: behavioral/visitor/README.md
+  - Примеры C#: code-examples.md

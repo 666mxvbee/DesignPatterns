@@ -1,0 +1,112 @@
+:root {
+  --patterns-radius: 0.75rem;
+  --patterns-border: color-mix(in srgb, var(--md-default-fg-color) 14%, transparent);
+  --patterns-surface: color-mix(in srgb, var(--md-default-bg-color) 94%, var(--md-primary-fg-color) 6%);
+}
+
+.md-grid {
+  max-width: 92rem;
+}
+
+.md-header {
+  box-shadow: 0 0.15rem 0.65rem rgba(23, 31, 54, 0.16);
+}
+
+.md-typeset h1 {
+  color: var(--md-default-fg-color);
+  font-weight: 750;
+  letter-spacing: -0.025em;
+}
+
+.md-typeset h2 {
+  border-bottom: 0.05rem solid var(--patterns-border);
+  padding-bottom: 0.35rem;
+  font-weight: 700;
+}
+
+.md-typeset h3 {
+  font-weight: 700;
+}
+
+.md-typeset a {
+  text-underline-offset: 0.15em;
+}
+
+.md-typeset table:not([class]) {
+  display: table;
+  width: 100%;
+  border: 0.05rem solid var(--patterns-border);
+  border-radius: var(--patterns-radius);
+  overflow: hidden;
+  box-shadow: 0 0.3rem 1.1rem rgba(23, 31, 54, 0.05);
+}
+
+.md-typeset table:not([class]) th {
+  background: var(--patterns-surface);
+  color: var(--md-default-fg-color);
+  font-weight: 700;
+}
+
+.md-typeset table:not([class]) tr {
+  transition: background-color 120ms ease;
+}
+
+.md-typeset table:not([class]) tr:hover {
+  background: color-mix(in srgb, var(--md-primary-fg-color) 5%, transparent);
+}
+
+.md-typeset code {
+  border-radius: 0.3rem;
+}
+
+.md-typeset pre > code {
+  line-height: 1.55;
+}
+
+.md-typeset .highlight {
+  border: 0.05rem solid var(--patterns-border);
+  border-radius: var(--patterns-radius);
+  box-shadow: 0 0.35rem 1.25rem rgba(23, 31, 54, 0.08);
+  overflow: hidden;
+}
+
+.md-typeset .highlighttable {
+  display: table;
+  width: 100%;
+}
+
+.md-typeset .highlighttable .highlight {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.md-typeset .highlight code {
+  font-size: 0.78rem;
+}
+
+.md-typeset blockquote {
+  border-left-color: var(--md-accent-fg-color);
+  background: var(--patterns-surface);
+  border-radius: 0 var(--patterns-radius) var(--patterns-radius) 0;
+  padding-bottom: 0.65rem;
+  padding-top: 0.65rem;
+}
+
+.md-nav__link--active {
+  font-weight: 700;
+}
+
+.md-footer-meta {
+  background: color-mix(in srgb, var(--md-footer-bg-color) 92%, black 8%);
+}
+
+@media screen and (max-width: 44.984375em) {
+  .md-typeset table:not([class]) {
+    display: block;
+  }
+
+  .md-typeset h1 {
+    font-size: 1.75rem;
+  }
+}
