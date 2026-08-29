@@ -122,4 +122,3 @@ nav:
       - Стратегия: behavioral/strategy/README.md
       - Шаблонный метод: behavioral/template-method/README.md
       - Посетитель: behavioral/visitor/README.md
-  - Примеры C#: code-examples.md
